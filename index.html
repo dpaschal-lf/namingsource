@@ -8,8 +8,27 @@
       border: 2px solid red;
     }
     .shooting{
-      
+      -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+      animation: shake 5s;      
     }
+    
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes shake {
+    0%   {transform: ;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
   </style>
   <script>
     function get_div(){
